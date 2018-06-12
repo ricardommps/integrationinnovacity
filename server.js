@@ -18,7 +18,7 @@ var secret = "zcvcjk4fddfvnsh170fn47dbf45623ffdnd6hjs";
 var rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = [new schedule.Range(0, 6)];
 rule.hour = 16; // set at 6 am
-rule.minute = 36;
+rule.minute = 45;
 
 var port     = process.env.PORT || 8080; // set our port
 app.use(logger('dev')); 
