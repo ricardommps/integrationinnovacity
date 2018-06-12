@@ -18,7 +18,7 @@ var secret = "zcvcjk4fddfvnsh170fn47dbf45623ffdnd6hjs";
 var rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = [new schedule.Range(0, 6)];
 rule.hour = 16; // set at 6 am
-rule.minute = 45;
+rule.minute = 55;
 
 var port     = process.env.PORT || 8080; // set our port
 app.use(logger('dev')); 
@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
     scheduleNewEmissions(dateFilter).then(resultSchedule => {
         console.log(">>>resultSchedule"); 
       }); */
-    res.status(200).send('Innovacity');
+    res.status(200).send('Innovacity v2');
 });
 
 app.listen(port, () => {
